@@ -1,0 +1,32 @@
+table {
+    width: 100%;
+}
+
+#table-container {
+    margin: 20px;
+}
+
+.mat-column-Title {
+    width: 15% !important;
+}
+
+.mat-column-Description {
+    width: 30% !important;
+}
+
+.mat-column-PageCount {
+    width: 5% !important;
+}
+
+.mat-column-Excerpt {
+    width: 50% !important;
+}
+
+.mat-column-select {
+    width: 5% !important;
+}
+
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}

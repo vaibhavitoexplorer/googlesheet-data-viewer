@@ -1,0 +1,57 @@
+<app-header></app-header>
+<div class="mat-elevation-z8" color="primary" id="table-container">
+  <mat-form-field>
+    <mat-label>Filter</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium">
+  </mat-form-field>
+  
+  <table mat-table [dataSource]="students">
+
+    <!-- Checkbox Column -->
+    <ng-container matColumnDef="select">
+      <th mat-header-cell *matHeaderCellDef>
+        <mat-checkbox (change)="$event ? masterToggle() : null" [checked]="selection.hasValue() && isAllSelected()"
+          [indeterminate]="selection.hasValue() && !isAllSelected()">
+        </mat-checkbox>
+      </th>
+      <td mat-cell *matCellDef="let row">
+        <mat-checkbox (click)="$event.stopPropagation()" (change)="$event ? selection.toggle(row) : null"
+          [checked]="selection.isSelected(row)" [aria-label]="checkboxLabel(row)">
+        </mat-checkbox>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="StudentName">
+      <th mat-header-cell *matHeaderCellDef> StudentName </th>
+      <td mat-cell *matCellDef="let element"> {{element.StudentName | shortner }} </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="Gender">
+      <th mat-header-cell *matHeaderCellDef> Gender </th>
+      <td mat-cell *matCellDef="let element"> {{element.Gender}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="ClassLevel">
+      <th mat-header-cell *matHeaderCellDef> ClassLevel </th>
+      <td mat-cell *matCellDef="let element"> {{element.ClassLevel}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="HomeState">
+      <th mat-header-cell *matHeaderCellDef> HomeState </th>
+      <td mat-cell *matCellDef="let element"> {{element.HomeState}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Major">
+      <th mat-header-cell *matHeaderCellDef> Major </th>
+      <td mat-cell *matCellDef="let element"> {{element.Major}} </td>
+    </ng-container>
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="selection.toggle(row)">
+    </tr>
+  </table>
+  <mat-paginator [pageSizeOptions]="[10, 20]" showFirstLastButtons></mat-paginator>
+  
+</div>

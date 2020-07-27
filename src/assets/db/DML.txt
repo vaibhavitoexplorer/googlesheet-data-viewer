@@ -1,0 +1,94 @@
+db.books.insertMany(
+    [
+        {
+            "ID" : NumberInt(1),
+            "Title" : "Bhagavad Gita",
+            "Description" : "The Bhagavad Gita, Hindu scripture that is part of the epic Mahabharata",
+            "PageCount" : NumberInt(739),
+            "Excerpt" : "The Bhagavad Gita often referred to as the Gita, is a 700-verse Hindu scripture that is part of the epic Mahabharata (chapters 23–40 of Bhishma Parva).",
+            "createdAt" : ISODate("2020-03-03T12:17:58.626Z"),
+            "updatedAt" : ISODate("2020-03-03T12:17:58.626Z")
+        },
+        {
+            "ID" : NumberInt(2),
+            "Title" : "Gandhi: An Autobiography",
+            "Description" : "Autobiography of Mohandas K. Gandhi, covering his life from early childhood",
+            "PageCount" : NumberInt(485),
+            "Excerpt" : "The Story of My Experiments with Truth is the autobiography of Mohandas K. Gandhi, covering his life from early childhood through to 1921.",
+            "createdAt" : ISODate("2020-03-03T12:17:58.626Z"),
+            "updatedAt" : ISODate("2020-03-03T12:17:58.626Z")
+        },
+        {
+            "ID" : NumberInt(3),
+            "Title" : "The Three Musketeers",
+            "Description" : "Historical adventure novel written in 1844 by French author Alexandre Dumas.",
+            "PageCount" : NumberInt(700),
+            "Excerpt" : "The Three Musketeers is a historical adventure novel written in 1844 by French author Alexandre Dumas.",
+            "createdAt" : ISODate("2020-03-03T12:17:58.626Z"),
+            "updatedAt" : ISODate("2020-03-03T12:17:58.626Z")
+        },
+        {
+            "ID" : NumberInt(4),
+            "Title" : "The Great Adventures of Sherlock Holmes",
+            "Description" : "A Martian invasion of England during the latter part of the 19th century.",
+            "PageCount" : NumberInt(307),
+            "Excerpt" : "An adaptation in cartoon form of Well's account of a Martian invasion of England during the latter part of the 19th century.",
+            "createdAt" : ISODate("2020-03-03T12:17:58.626Z"),
+            "updatedAt" : ISODate("2020-03-03T12:17:58.626Z")
+        },
+        {
+            "ID" : NumberInt(5),
+            "Title" : "World War II: The Definitive Visual History",
+            "Description" : "Epic war from every angle, tracing the course of military.",
+            "PageCount" : NumberInt(372),
+            "Excerpt" : "The definitive visual history looks at this epic war from every angle, tracing the course of military, strategic, and political events across the globe.",
+            "createdAt" : ISODate("2020-03-03T12:17:58.626Z"),
+            "updatedAt" : ISODate("2020-03-03T12:17:58.626Z")
+        },
+        {
+            "ID" : NumberInt(6),
+            "Title" : "Life of Pi",
+            "Description" : "Life of Pi is a Canadian philosophical novel by Yann Martel.",
+            "PageCount" : NumberInt(354),
+            "Excerpt" : "The protagonist is Piscine Molitor "Pi" Patel, an Indian Tamil boy from Pondicherry who explores issues of spirituality and metaphysics from an early age.",
+            "createdAt" : ISODate("2020-03-03T12:17:58.626Z"),
+            "updatedAt" : ISODate("2020-03-03T12:17:58.626Z")
+        },
+        {
+            "ID" : NumberInt(7),
+            "Title" : "Harry Potter and the Deathly Hallows",
+            "Description" : "Harry Potter and the Deathly Hallows is a fantasy novel written by British author J. K. Rowling.",
+            "PageCount" : NumberInt(607),
+            "Excerpt" : "Final novel of the Harry Potter series. It was released on 21 July 2007 in the United Kingdom by Bloomsbury Publishing.",
+            "createdAt" : ISODate("2020-03-03T12:17:58.626Z"),
+            "updatedAt" : ISODate("2020-03-03T12:17:58.626Z")
+        },
+        {
+            "ID" : NumberInt(8),
+            "Title" : "Little Fires Everywhere",
+            "Description" : "Little Fires Everywhere is a 2017 novel by American author Celeste Ng.",
+            "PageCount" : NumberInt(352),
+            "Excerpt" : "Little Fires Everywhere is a 2017 novel by American author Celeste Ng. It is her second novel and takes place in Shaker Heights, Ohio where Ng grew up.",
+            "createdAt" : ISODate("2020-03-03T12:17:58.626Z"),
+            "updatedAt" : ISODate("2020-03-03T12:17:58.626Z")
+        },
+        {
+            "ID" : NumberInt(9),
+            "Title" : "Madhushala",
+            "Description" : "Madhushala is a book of 135 quatrains.",
+            "PageCount" : NumberInt(152),
+            "Excerpt" : "Madhushala is a book of 135 'quatrains': verses of four lines by Hindi poet and writer Harivansh Rai Bachchan.",
+            "createdAt" : ISODate("2020-03-03T12:17:58.626Z"),
+            "updatedAt" : ISODate("2020-03-03T12:17:58.626Z")
+        },
+        {
+            "ID" : NumberInt(10),
+            "Title" : "Freedom at Midnight",
+            "Description" : "Freedom at Midnight is a book by Larry Collins and Dominique Lapierre.",
+            "PageCount" : NumberInt(774),
+            "Excerpt" : "It describes events around Indian independence and partition in 1947-48, beginning with the appointment of Lord Mountbatten of Burma as the last viceroy of British India, and ending with the death and funeral of Mahatma Gandhi.",
+            "createdAt" : ISODate("2020-03-03T12:17:58.626Z"),
+            "updatedAt" : ISODate("2020-03-03T12:17:58.626Z")
+        },
+    ]
+)
